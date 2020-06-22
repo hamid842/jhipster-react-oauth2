@@ -1,0 +1,1 @@
+export const MOBILE_IS_VALID = 'MOBILE_IS_VALID';

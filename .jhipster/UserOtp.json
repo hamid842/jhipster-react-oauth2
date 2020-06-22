@@ -1,0 +1,50 @@
+{
+  "name": "UserOtp",
+  "fields": [
+    {
+      "fieldName": "msisdn",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "tacCode",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "6"
+    },
+    {
+      "fieldName": "tacExpiryTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isTacVerified",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "setPassword",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "resetPassword",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200529115451",
+  "entityTableName": "user_otp",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "microserviceName": "aquila"
+}

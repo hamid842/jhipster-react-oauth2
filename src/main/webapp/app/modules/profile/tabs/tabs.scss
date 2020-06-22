@@ -1,0 +1,17 @@
+div.tabs {
+  width: 1255px;
+  height: 530px;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 80px;
+
+  .home {
+    background: rgb(236, 236, 236);
+    border: 1px solid #7371ea;
+  }
+
+  .profile {
+    background: rgb(236, 236, 236);
+    border: 1px solid #7371ea;
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "name": "ThunesRequest",
+  "fields": [
+    {
+      "fieldName": "referenceNumber",
+      "fieldType": "Long",
+      "fieldValidateRules": [
+        "unique"
+      ]
+    },
+    {
+      "fieldName": "sourceAmount",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "sourceCurrency",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "destinationAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "destinationCurrency",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionStatus",
+      "fieldType": "ThunesTransactionStatus",
+      "fieldValues": "REQUEST,QUOTATION,CREATED,CONFIRMED,CONFIRMED_UNDER_REVIEW_SLS,CONFIRMED_WAITING_FOR_PICKUP,REJECTED,REJECTED_SLS_SENDER,REJECTED_SLS_BENEFICIARY,REJECTED_INVALID_BENEFICIARY,REJECTED_BARRED_BENEFICIARY,REJECTED_INVALID_BENEFICIARY_DETAILS,REJECTED_LIMITATIONS_ON_TRANSACTION_VALUE,REJECTED_LIMITATIONS_ON_SENDER_VALUE,REJECTED_LIMITATIONS_ON_BENEFICIARY_VALUE,REJECTED_LIMITATIONS_ON_ACCOUNT_VALUE,REJECTED_LIMITATIONS_ON_SENDER_QUANTITY,REJECTED_LIMITATIONS_ON_BENEFICIARY_QUANTITY,REJECTED_LIMITATIONS_ON_ACCOUNT_QUANTITY,REJECTED_PAYER_CURRENTLY_UNAVAILABLE,REJECTED_INSUFFICIENT_BALANCE,CANCELLED,SUBMITTED,AVAILABLE,COMPLETED,REVERSED,DECLINED,DECLINED_SLS_SENDER,DECLINED_SLS_BENEFICIARY,DECLINED_INVALID_BENEFICIARY,DECLINED_BARRED_BENEFICIARY,DECLINED_UNSUPPORTED_BENEFICIARY,DECLINED_INVALID_BENEFICIARY_DETAILS,DECLINED_LIMITATIONS_ON_TRANSACTION_VALUE,DECLINED_LIMITATIONS_ON_SENDER_VALUE,DECLINED_LIMITATIONS_ON_BENEFICIARY_VALUE,DECLINED_LIMITATIONS_ON_ACCOUNT_VALUE,DECLINED_LIMITATIONS_ON_ACCOUNT_VALUE_DAILY,DECLINED_LIMITATIONS_ON_ACCOUNT_VALUE_WEEKLY,DECLINED_LIMITATIONS_ON_ACCOUNT_VALUE_MONTHLY,DECLINED_LIMITATIONS_ON_ACCOUNT_VALUE_YEARLY,DECLINED_LIMITATIONS_ON_SENDER_QUANTITY,DECLINED_LIMITATIONS_ON_BENEFICIARY_QUANTITY,DECLINED_LIMITATIONS_ON_ACCOUNT_QUANTITY,DECLINED_PAYER_CURRENTLY_UNAVAILABLE"
+    },
+    {
+      "fieldName": "transactionType",
+      "fieldType": "ThunesTransactionType",
+      "fieldValues": "C2C,C2B,B2C,B2B"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "feeAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "feeCurrency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quotationId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quotationCreationDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "quotationExpirationDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "senderFirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderLastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderNationalityCountryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderBirthDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderCountryOfBirth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderGender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderPostalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderCity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderCountryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderMsisdn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderIdType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderIdNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderIdCountryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderIdDeliveryDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderOccupation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryFirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryLastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryNationalityCountryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryBirthDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryCountryOfBirth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryGender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryPostalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryCity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryCountryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryMsisdn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryIdType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryIdNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryIdCountryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryIdDeliveryDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryOccupation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditPartyMsisdn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditPartyAccountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditPartySwiftCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wholesaleFxRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "mode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "additionalInfo1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "additionalInfo2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "additionalInfo3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "purposeRemittance",
+      "fieldType": "ThunesPurposeOfRemittance",
+      "fieldValues": "FAMILY_SUPPORT,EDUCATION,GIFT_AND_DONATION,MEDICAL_TREATMENT,MAINTENANCE_EXPENSES,TRAVEL,SMALL_VALUE_REMITTANCE,LIBERALIZED_REMITTANCE,CONSTRUCTION_EXPENSES,HOTEL_ACCOMMODATION,ADVERTISING_EXPENSES,ADVISORY_FEES,BUSINESS_INSURANCE,INSURANCE_CLAIMS,DELIVERY_FEES,EXPORTED_GOODS,SERVICE_CHARGES,LOAN_PAYMENT,OFFICE_EXPENSES,PROPERTY_PURCHASE,PROPERTY_RENTAL,ROYALTY_FEES,SHARES_INVESTMENT,FUND_INVESTMENT,TAX_PAYMENT,TRANSPORTATION_FEES,UTILITY_BILLS,PERSONAL_TRANSFER,SALARY_PAYMENT,OTHER_FEES"
+    },
+    {
+      "fieldName": "documentReferenceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "callbackUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionCreationDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "transactionExpirationDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "modifiedDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "appUser",
+      "otherEntityRelationshipName": "thunesRequest",
+      "relationshipName": "appUser",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "receiver",
+      "otherEntityRelationshipName": "thunesRequest",
+      "relationshipName": "receiver",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200529115651",
+  "entityTableName": "thunes_request",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "microserviceName": "aquila"
+}

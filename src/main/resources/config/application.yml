@@ -1,0 +1,7 @@
+security:
+  oauth2:
+    client:
+      client-id: aquila-admin
+      client-secret: 414b1632-9fa0-44b9-825d-b71e295df6e5
+    resource:
+      user-info-uri: https://keycloak.m1pay.com.my/auth/realms/aquila/protocol/openid-connect/userinfo

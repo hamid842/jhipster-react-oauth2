@@ -1,0 +1,19 @@
+div.left-nav {
+  display: flex;
+  height: 100%;
+  width: 60px;
+  margin-top: 50px;
+  background: #7371ea;
+  position: fixed;
+  top: 60px;
+  flex-direction: column;
+  box-shadow: 0 0 5px gray;
+
+  a {
+    color: white;
+    font-size: 1.6em;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
